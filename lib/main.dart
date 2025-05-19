@@ -116,7 +116,8 @@ class _MyHomePageState extends State<MyHomePage> {
               numberToBahasa(_counter % 10),
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            Handsome(),
+            if (_counter % 10 != 7) Handsome(),
+            if (_counter % 10 == 7) Corey(),
           ],
         ),
       ),
@@ -137,6 +138,27 @@ class Handsome extends StatelessWidget {
       children: <Widget>[
         Image.asset('assets/images/image.png', width: 200, height: 200),
         Image.asset('assets/images/handsome.png', width: 200, height: 200),
+      ],
+    );
+  }
+}
+
+class Corey extends StatefulWidget {
+  @override
+  _CoreyState createState() => _CoreyState();
+}
+
+class _CoreyState extends State<Corey> {
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Image.asset(
+          'assets/images/slightly_handsome.png',
+          width: 200,
+          height: 200,
+        ),
       ],
     );
   }
