@@ -116,8 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
               numberToBahasa(_counter % 10),
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            Image.asset('assets/images/image.png', width: 200, height: 200),
-            Image.asset('assets/images/handsome.png', width: 200, height: 200),
+            Handsome(),
           ],
         ),
       ),
@@ -126,6 +125,19 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+class Handsome extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Image.asset('assets/images/image.png', width: 200, height: 200),
+        Image.asset('assets/images/handsome.png', width: 200, height: 200),
+      ],
     );
   }
 }
