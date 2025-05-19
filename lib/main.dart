@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Handsome App',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -28,7 +28,9 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color.fromARGB(255, 254, 131, 223),
+        ),
       ),
       home: const MyHomePage(title: 'AKU suka nomor'),
     );
@@ -151,14 +153,11 @@ class Corey extends StatefulWidget {
 class _CoreyState extends State<Corey> {
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        Image.asset(
-          'assets/images/slightly_handsome.png',
-          width: 200,
-          height: 200,
-        ),
+        Image.asset('assets/images/slightly_handsome.png'),
+        Text("he likes age<=2joeblast"),
       ],
     );
   }
