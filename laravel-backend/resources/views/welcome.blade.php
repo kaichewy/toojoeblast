@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -12,5 +13,10 @@
     </head>
     <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] flex p-6 lg:p-8 items-center lg:justify-center min-h-screen flex-col">
         <a href="{{route('products.index')}}">Products</a>
+=======
+<html>
+    <body>
+        this is the backend
+>>>>>>> 7ecc652e3c57c479a656f416fe8c5399b32ff067
     </body>
 </html>

@@ -8,6 +8,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
 Route::get('/', function () {
     return response()->json(['message' => 'Welcome to the API!']);
 });
@@ -28,3 +29,8 @@ Route::get('/products', [ProductController::class, 'index'])
     ->name('products.index');
 
 require __DIR__.'/auth.php';
+=======
+Route:: get('/yoyo', function () {
+    return 'this is yoyo';
+});
+>>>>>>> 7ecc652e3c57c479a656f416fe8c5399b32ff067
